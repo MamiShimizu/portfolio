@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="ShimizuMamiのポートフォリオ">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="pc_nav">
+            <div class="header_menu">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fv">
+            <picture>
+                <img src="images/top-100.jpg" alt="トップページ">
+            </picture>
+        </div>
+        <p class="lead">
+            チームの一員であること<br>
+            繋がる先があることを大切に</p>
+
+        <section class="about section" id="about">
+            <h2 class="heading heading--about">ABOUT</h2>
+            <div class="about_flex">
+                <div class="about_img">
+                    <img src="images/kari_about@2x.png" alt="顔">
+                </div>
+                <div class="about_profile">
+                    <div class="about_name">
+                        Mami Shimizu</div>
+                    <p class="about_desc">
+                        長野県出身<br>
+                        青空広がる緑豊かな自然の中で育ちました。
+                    </p>
+                </div>
+            </div>
+
+            <div class="about_skill">
+                <h3>SKILL</h3>
+                <div class="skill_box">
+                    <ul>
+                        <li>
+                            <img src="images/skill_01.png" alt="coding">
+                            <p>HTML/CSS</p>
+                        </li>
+                        <li>
+                            <img src="images/skill_02.png" alt="figma">
+                            <p>Figma</p>
+                        </li>
+                        <li>
+                            <img src="images/skill_03.png" alt="illustrator">
+                            <p>Illustrator</p>
+                        </li>
+                        <li>
+                            <img src="images/skill_04.png" alt="photoshop">
+                            <p>Photoshop</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="works section" id="works">
+            <h2 class="heading heading--works">WORKS</h2>
+            <div class="works_box">
+                <ul>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_01-100.jpg" alt="work1">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/ works_01_sp@2x-100.jpg" alt="work1">
+                        </div>
+                        <p>広告バナー</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_02-100.jpg" alt="work2">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_02_sp@2x-100.jpg" alt="work2">
+                        </div>
+                        <p>広告バナー</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_03-100.jpg" alt="work3">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_03_sp@2x-100.jpg" alt="work3">
+                        </div>
+                        <p>広告バナー</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_04-100.jpg" alt="work4">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_04_sp@2x-100.jpg" alt="work4">
+                        </div>
+                        <p>広告バナー</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_05-100.jpg" alt="work5">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_05_sp@2x-100.jpg" alt="work5">
+                        </div>
+                        <p>コーポレートサイト</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_06-100.jpg" alt="work6">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_06_sp@2x-100.jpg" alt="work6">
+                        </div>
+                        <p>コーポレートサイト</p>
+                    </li>
+                    <li>
+                        <div class="pc_only">
+                            <img src="images/works_07-100.jpg" alt="work7">
+                        </div>
+                        <div class="sp_only">
+                            <img src="images/works_07_sp@2x-100.jpg" alt="work7">
+                        </div>
+                        <p>コーポレートサイト</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="contact section" id="contact">
+            <h2 class="heading heading--contact">CONTACT</h2>
+            <form
+                action="action=https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXGQLghnNfMEqWzNtjsR-7WGbVN1TqiaQcWI0ZORoCXc2gSQ/formResponse">
+                <div class="contact_form">
+                    <div class="contact_sentence">
+                        <label for="name">お名前
+                            <span>必須</span>
+                        </label>
+                        <input class="input_text" type="text" name="entry.366340186" required>
+                    </div>
+                    <div class="contact_sentence">
+                        <label for="furigana">フリガナ
+                            <span>必須</span>
+                        </label>
+                        <input class="input_text" type="text" name="entry.636114824" required>
+                    </div>
+                    <div class="contact_sentence">
+                        <label for="email">メールアドレス
+                            <span>必須</span>
+                        </label>
+                        <input class="input_text" type="text" name="entry.1072019112" required>
+                    </div>
+                    <div class="contact_sentence">
+                        <label for="msg">お問い合わせ内容
+                            <span>必須</span>
+                        </label>
+                        <textarea class="message" name="entry.785370535"></textarea>
+                    </div>
+                    <button class="btn">送信</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer_copy">©Mami Shimizu</p>
+    </footer>
+
+    <div class="pagetop">
+        <a href="#header"></a>
+        <img src="images/logo_pagetop.png" alt="pagetop">
+    </div>
+
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
+
+        })
+    </script>
+
+
+</body>
+
+</html>
