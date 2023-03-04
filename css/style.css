@@ -2,8 +2,6 @@
 
 /* cssリセット */
 
-/*利用するタグによってこちらの内容は増やす*/
-
 body {
   background-color: #fafafa;
 }
@@ -54,16 +52,16 @@ html {
   scroll-behavior: smooth;
 }
 
-/*ポートフォリオ*/
-
 /*header*/
-header {
+.header {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   border-bottom: 2px solid #000;
+  z-index: 98;
 }
 
 .header_menu {
@@ -124,6 +122,10 @@ header {
   background-color: #59a1d0;
 }
 
+.container {
+  padding: 0 40px;
+}
+
 /*ファーストビュー*/
 .fv img {
   width: 100%;
@@ -154,9 +156,9 @@ header {
   margin-bottom: 50px;
 }
 
-.about_desk {
+.about_desc {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .about_skill h3 {
@@ -206,6 +208,7 @@ header {
 .works_box {
   max-width: 960px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .works_box ul {
@@ -215,13 +218,9 @@ header {
 }
 
 .works_box ul li {
-  width: calc(100% / 3);
-  margin-bottom: 100px;
+  width: calc((100% - 60px) / 3);
+  margin: 0 10px 40px;
   text-align: center;
-}
-
-.works_box img {
-  margin-top: 50px;
 }
 
 .works_box p {
@@ -232,15 +231,14 @@ header {
 }
 
 /*contact*/
-
 .contact_form {
-  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
 .contact_sentence {
   width: 100%;
-  text-align: center;
   margin-top: 40px;
 }
 
@@ -253,6 +251,10 @@ header {
 .input_text {
   width: 100%;
   margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #999;
+  box-sizing: border-box;
 }
 
 /*input[type="email"] {
@@ -267,6 +269,9 @@ textarea {
   height: 200px;
   margin-top: 20px;
   box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #999;
 }
 
 button {
@@ -274,7 +279,9 @@ button {
   color: white;
   font-size: 16px;
   padding: 10px 20px;
-  margin: 50px;
+  margin: 50px auto;
+  display: block;
+  border: none;
 }
 
 /*footer*/
@@ -351,11 +358,13 @@ button {
   .sp_btn.open span::before {
     bottom: 0;
     transform: rotate(45deg);
+    background-color: #fff;
   }
 
   .sp_btn.open span::after {
     top: 0;
     transform: rotate(135deg);
+    background-color: #fff;
   }
 
   /*ハンバーガーメニュー */
