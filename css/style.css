@@ -214,7 +214,6 @@ html {
 .works_box ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .works_box ul li {
